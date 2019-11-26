@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 const NavBar = () => {
-    const [links, setLinks] = useState(['Account', 'Courses', 'Sign In'])
+    const [links, setLinks] = useState(['Account', 'Courses', 'Sign In']) // TODO: add user sign in
     const addLinks = () => { return links.map(name => <Nav.Link href="#" key={name}>{name}</Nav.Link>) };        
     return (
         <Navbar variant="dark" bg="dark" expand="sm">
